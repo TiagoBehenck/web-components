@@ -4,11 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Component</title>
+  <style>
+    body { 
+      background-color: #333;
+    }
+  </style>
 </head>
 <body>
   <star-rater></star-rater>
   <star-rater data-number-of-star="6"></star-rater>
   <star-rater data-number-of-star="8"></star-rater>
-  <script src="StarRater.js"></script>
+  
+  
+  <todo-item checked>
+    test 1
+    <span slot="description">Small text</span>
+  </todo-item>
+  <todo-item>test 2</todo-item>
+  <todo-item>test 3</todo-item>
+  <todo-item>test 4</todo-item>
+
+  <script defer src="StarRater.js"></script>
+  <script defer src="TodoItems.js"></script>
 </body>
 </html>
